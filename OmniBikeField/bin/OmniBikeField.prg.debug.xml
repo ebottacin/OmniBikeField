@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="11" pc="268435456" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="12" pc="268435460" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="16" pc="268435479" symbol="onStart"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="20" pc="268435484" symbol="onStop"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="24" pc="268435489" symbol="getInitialView"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="25" pc="268435493" symbol="getInitialView"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="59" pc="268435531" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="60" pc="268435535" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="61" pc="268435553" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="63" pc="268435583" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="64" pc="268435593" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="68" pc="268435606" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="75" pc="268435636" symbol="onLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="76" pc="268435640" symbol="onLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="77" pc="268435653" symbol="onLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="81" pc="268435666" symbol="onLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="82" pc="268435691" symbol="onLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="83" pc="268435754" symbol="onLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="87" pc="268435767" symbol="onLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="89" pc="268435779" symbol="onLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="92" pc="268435789" symbol="onLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="97" pc="268435793" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="98" pc="268435797" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="99" pc="268435808" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="100" pc="268435842" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="102" pc="268435885" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="103" pc="268435922" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="105" pc="268435959" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="106" pc="268435996" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="107" pc="268436033" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="110" pc="268436073" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="115" pc="268436090" symbol="onUpdate"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="117" pc="268436094" symbol="onUpdate"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="118" pc="268436105" symbol="onUpdate"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="124" pc="268436123" symbol="drawLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="125" pc="268436127" symbol="drawLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="126" pc="268436159" symbol="drawLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="128" pc="268436171" symbol="drawLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="129" pc="268436193" symbol="drawLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="130" pc="268436207" symbol="drawLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="131" pc="268436221" symbol="drawLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="132" pc="268436252" symbol="drawLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="133" pc="268436266" symbol="drawLayout"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="136" pc="268436281" symbol="setBgColor"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="137" pc="268436285" symbol="setBgColor"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="138" pc="268436304" symbol="setBgColor"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="139" pc="268436328" symbol="setBgColor"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="141" pc="268436375" symbol="setBgColor"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="143" pc="268436398" symbol="setBgColor"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="147" pc="268436419" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="148" pc="268436423" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="149" pc="268436459" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="150" pc="268436476" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="151" pc="268436514" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="152" pc="268436546" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="153" pc="268436584" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="154" pc="268436616" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="155" pc="268436654" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="156" pc="268436692" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="158" pc="268436730" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="160" pc="268436766" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="161" pc="268436809" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="162" pc="268436852" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="164" pc="268436895" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="165" pc="268436938" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="167" pc="268436938" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="168" pc="268436967" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="170" pc="268437006" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="172" pc="268437016" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="174" pc="268437023" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="176" pc="268437063" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="177" pc="268437092" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="179" pc="268437102" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="181" pc="268437109" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="183" pc="268437149" symbol="drawGrid"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="186" pc="268437167" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="187" pc="268437171" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="188" pc="268437203" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="189" pc="268437220" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="192" pc="268437220" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="193" pc="268437243" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="194" pc="268437313" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="196" pc="268437408" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="198" pc="268437494" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="201" pc="268437534" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="204" pc="268437580" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="207" pc="268437629" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="210" pc="268437675" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="212" pc="268437704" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="213" pc="268437790" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="216" pc="268437892" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="217" pc="268437958" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="220" pc="268438051" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="223" pc="268438100" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="225" pc="268438129" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="226" pc="268438215" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="229" pc="268438285" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="231" pc="268438331" symbol="drawFields"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="234" pc="268438349" symbol="calculateDistance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="235" pc="268438353" symbol="calculateDistance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="237" pc="268438386" symbol="calculateDistance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="238" pc="268438402" symbol="calculateDistance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="239" pc="268438412" symbol="calculateDistance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="240" pc="268438425" symbol="calculateDistance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="241" pc="268438443" symbol="calculateDistance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="242" pc="268438450" symbol="calculateDistance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="243" pc="268438455" symbol="calculateDistance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="245" pc="268438465" symbol="calculateDistance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="247" pc="268438490" symbol="calculateDistance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="251" pc="268438497" symbol="calculateSpeed"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="252" pc="268438501" symbol="calculateSpeed"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="253" pc="268438534" symbol="calculateSpeed"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="255" pc="268438566" symbol="calculateSpeed"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="259" pc="268438573" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="260" pc="268438577" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="261" pc="268438594" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="262" pc="268438594" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="264" pc="268438613" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="265" pc="268438624" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="266" pc="268438698" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="267" pc="268438705" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="269" pc="268438712" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="270" pc="268438797" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="271" pc="268438829" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="273" pc="268438833" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="274" pc="268438865" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="275" pc="268438906" symbol="drawTOD"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="278" pc="268438954" symbol="calculateAmPmHour"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="279" pc="268438958" symbol="calculateAmPmHour"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="280" pc="268438969" symbol="calculateAmPmHour"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="282" pc="268438989" symbol="calculateAmPmHour"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="284" pc="268439001" symbol="calculateAmPmHour"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="289" pc="268439005" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="290" pc="268439009" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="291" pc="268439016" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="292" pc="268439023" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="293" pc="268439030" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="295" pc="268439037" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="296" pc="268439055" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="297" pc="268439055" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="298" pc="268439066" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="300" pc="268439108" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="302" pc="268439150" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="304" pc="268439192" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="306" pc="268439209" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="309" pc="268439223" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="310" pc="268439255" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="311" pc="268439322" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="313" pc="268439381" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="316" pc="268439437" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="317" pc="268439455" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="318" pc="268439481" symbol="drawSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="324" pc="268439539" symbol="drawGps"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="326" pc="268439543" symbol="drawGps"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="327" pc="268439564" symbol="drawGps"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="329" pc="268439638" symbol="drawGps"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="331" pc="268439712" symbol="drawGps"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="333" pc="268439775" symbol="drawGps"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="338" pc="268439836" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="339" pc="268439840" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="340" pc="268439872" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="341" pc="268439910" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="342" pc="268439936" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="344" pc="268439968" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="345" pc="268440000" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="346" pc="268440038" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="347" pc="268440060" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="349" pc="268440098" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="350" pc="268440130" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="351" pc="268440168" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="352" pc="268440194" symbol="drawGpsSign"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="356" pc="268440233" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="357" pc="268440237" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="358" pc="268440244" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="360" pc="268440251" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="361" pc="268440274" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="362" pc="268440274" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="363" pc="268440285" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="365" pc="268440302" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="368" pc="268440316" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="369" pc="268440348" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="370" pc="268440374" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="371" pc="268440412" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="372" pc="268440450" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="373" pc="268440476" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="374" pc="268440487" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="376" pc="268440558" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="377" pc="268440604" symbol="drawBattery"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="402" pc="268440659" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="404" pc="268440663" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="405" pc="268440701" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="407" pc="268440739" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="408" pc="268440782" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="409" pc="268440825" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="410" pc="268440838" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="411" pc="268440851" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="412" pc="268440864" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="418" pc="268440878" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="421" pc="268440882" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="422" pc="268440889" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="423" pc="268440906" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="424" pc="268440919" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="425" pc="268440937" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="426" pc="268440955" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="427" pc="268440973" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="429" pc="268440994" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="431" pc="268440998" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="432" pc="268441024" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="433" pc="268441043" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="435" pc="268441063" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="436" pc="268441082" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="437" pc="268441095" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="441" pc="268441115" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="444" pc="268441196" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="445" pc="268441207" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="446" pc="268441224" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="448" pc="268441231" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="449" pc="268441242" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="450" pc="268441270" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="451" pc="268441295" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="452" pc="268441315" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="453" pc="268441335" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="454" pc="268441360" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="455" pc="268441385" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="461" pc="268441422" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="462" pc="268441441" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="463" pc="268441470" symbol="compute"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="469" pc="268441491" symbol="getVam"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="470" pc="268441495" symbol="getVam"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="473" pc="268441505" symbol="getSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="474" pc="268441509" symbol="getSlope"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="477" pc="268441519" symbol="getAltitude"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="478" pc="268441523" symbol="getAltitude"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="482" pc="268441533" symbol="distance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="486" pc="268441537" symbol="distance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="487" pc="268441555" symbol="distance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="488" pc="268441573" symbol="distance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="489" pc="268441588" symbol="distance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="491" pc="268441603" symbol="distance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="492" pc="268441728" symbol="distance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="494" pc="268441768" symbol="distance"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="498" pc="268441781" symbol="deg2rad"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="499" pc="268441785" symbol="deg2rad"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="516" pc="268441808" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="517" pc="268441812" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="518" pc="268441823" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="519" pc="268441833" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="523" pc="268441847" symbol="add"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="524" pc="268441851" symbol="add"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="525" pc="268441870" symbol="add"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="526" pc="268441901" symbol="add"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="527" pc="268441921" symbol="add"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="532" pc="268441944" symbol="reset"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="533" pc="268441948" symbol="reset"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="534" pc="268441978" symbol="reset"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="536" pc="268442003" symbol="reset"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="537" pc="268442016" symbol="reset"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="540" pc="268442030" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="541" pc="268442034" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="542" pc="268442041" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="543" pc="268442058" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="544" pc="268442079" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="546" pc="268442108" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="548" pc="268442124" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="563" pc="268442128" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="564" pc="268442132" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="565" pc="268442143" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="566" pc="268442153" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="567" pc="268442163" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="568" pc="268442176" symbol="initialize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="572" pc="268442190" symbol="push"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="574" pc="268442194" symbol="push"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="575" pc="268442213" symbol="push"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="581" pc="268442245" symbol="pop"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="583" pc="268442249" symbol="pop"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="584" pc="268442252" symbol="pop"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="585" pc="268442271" symbol="pop"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="587" pc="268442302" symbol="pop"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="616" pc="268442306" symbol="getBufferSize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="617" pc="268442310" symbol="getBufferSize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="618" pc="268442330" symbol="getBufferSize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="620" pc="268442360" symbol="getBufferSize"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="624" pc="268442379" symbol="isFull"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="625" pc="268442383" symbol="isFull"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="626" pc="268442412" symbol="isFull"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="628" pc="268442418" symbol="isFull"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="632" pc="268442422" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="633" pc="268442426" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="634" pc="268442433" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="636" pc="268442440" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="637" pc="268442460" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="638" pc="268442480" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="639" pc="268442504" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="640" pc="268442520" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="643" pc="268442546" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="644" pc="268442579" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="645" pc="268442604" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="648" pc="268442627" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="651" pc="268442637" symbol="getAverage"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="656" pc="268442641" symbol="reset"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="657" pc="268442645" symbol="reset"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="658" pc="268442675" symbol="reset"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="660" pc="268442700" symbol="reset"/>
+<entry filename="C:\\Users\\ebottacin\\git\\OmniBikeField\\OmniBikeField\\source\\OmniBikeFieldApp.mc" lineNum="661" pc="268442713" symbol="reset"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388644" symbol="System"/>
+<entry id="9" object="true" symbol="OmniBikeFieldView"/>
+<entry id="61" method="true" symbol="calculateSpeed"/>
+<entry id="66" method="true" symbol="drawGpsSign"/>
+<entry id="23" symbol="mLocationBuffer"/>
+<entry id="42" symbol="VAM_THRESHOLD_CLIMB"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="67" method="true" symbol="drawBattery"/>
+<entry id="64" method="true" symbol="drawSlope"/>
+<entry id="69" symbol="endPos"/>
+<entry id="24" symbol="mAltitudeBuffer"/>
+<entry id="60" method="true" symbol="calculateDistance"/>
+<entry id="12" object="true" symbol="DataBuffer"/>
+<entry id="15" symbol="numValidSamples"/>
+<entry id="50" symbol="mHr"/>
+<entry id="55" symbol="mVamSlopeCalculator"/>
+<entry id="51" symbol="mDst"/>
+<entry field="true" id="8388611" symbol="Toybox"/>
+<entry id="19" symbol="QUEUE_SIZE"/>
+<entry id="26" symbol="mVamSpeed"/>
+<entry field="true" id="8389794" symbol="warning"/>
+<entry id="8388770" module="true" symbol="Strings"/>
+<entry id="48" symbol="mIs24Hour"/>
+<entry id="68" symbol="startPos"/>
+<entry id="21" symbol="mVamSamples"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="40" symbol="VALUE_FONT_SM"/>
+<entry id="8388640" symbol="Lang"/>
+<entry id="73" method="true" symbol="isFull"/>
+<entry id="8388769" module="true" symbol="Rez"/>
+<entry id="37" symbol="CENTER"/>
+<entry id="49" symbol="mElapsedTime"/>
+<entry id="39" symbol="VALUE_FONT"/>
+<entry id="8389807" symbol="data"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="36" symbol="AppName"/>
+<entry id="25" symbol="mTick"/>
+<entry id="45" symbol="mBgColor"/>
+<entry id="47" symbol="mGpsSignal"/>
+<entry id="8388641" symbol="Math"/>
+<entry field="true" id="35" symbol="LauncherIcon"/>
+<entry id="65" method="true" symbol="drawGps"/>
+<entry id="11" object="true" symbol="DataQueue"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="59" method="true" symbol="drawFields"/>
+<entry id="8388771" module="true" symbol="Drawables"/>
+<entry id="8389137" method="true" symbol="compute"/>
+<entry id="13" symbol="maxSize"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="38" symbol="HEADER_FONT"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="10" object="true" symbol="VamSlopeCalculator"/>
+<entry id="8388942" method="true" symbol="add"/>
+<entry id="54" symbol="mCal"/>
+<entry id="52" symbol="mCad"/>
+<entry id="53" symbol="mVel"/>
+<entry id="32" method="true" symbol="deg2rad"/>
+<entry id="30" method="true" symbol="getSlope"/>
+<entry id="8389846" symbol="type"/>
+<entry id="56" method="true" symbol="drawLayout"/>
+<entry id="46" symbol="mFgColor"/>
+<entry id="70" method="true" symbol="push"/>
+<entry id="44" symbol="mSingleField"/>
+<entry id="43" symbol="ALT_THRESHOLD"/>
+<entry id="16" method="true" symbol="reset"/>
+<entry id="8388911" method="true" symbol="distance"/>
+<entry id="41" symbol="VAM_THRESHOLD"/>
+<entry id="34" module="true" symbol="Layouts"/>
+<entry id="22" symbol="mSlopeSamples"/>
+<entry id="62" method="true" symbol="drawTOD"/>
+<entry id="28" symbol="mAltitude"/>
+<entry id="14" symbol="pos"/>
+<entry id="71" method="true" symbol="pop"/>
+<entry id="8" object="true" symbol="OmniBikeFieldApp"/>
+<entry id="29" method="true" symbol="getVam"/>
+<entry id="72" method="true" symbol="getBufferSize"/>
+<entry id="31" method="true" symbol="getAltitude"/>
+<entry id="58" method="true" symbol="drawGrid"/>
+<entry id="57" method="true" symbol="setBgColor"/>
+<entry id="17" method="true" symbol="getAverage"/>
+<entry id="33" module="true" symbol="Menus"/>
+<entry id="18" symbol="BUFFER_SIZE"/>
+<entry id="63" method="true" symbol="calculateAmPmHour"/>
+<entry id="27" symbol="mSlope"/>
+<entry id="8388772" module="true" symbol="Fonts"/>
+<entry id="20" symbol="R"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435792" name="height" stackId="3" startPc="268435640"/>
+<entry endPc="268435792" name="width" stackId="2" startPc="268435640"/>
+<entry endPc="268437166" name="header" stackId="2" startPc="268436423"/>
+<entry endPc="268438348" name="formattedValue" stackId="2" startPc="268437171"/>
+<entry endPc="268438487" name="distanceHigh" stackId="2" startPc="268438386"/>
+<entry endPc="268438487" name="distanceFullString" stackId="3" startPc="268438386"/>
+<entry endPc="268438487" name="distanceInUnit" stackId="1" startPc="268438386"/>
+<entry endPc="268438487" name="floatNumber" stackId="5" startPc="268438386"/>
+<entry endPc="268438487" name="commaPos" stackId="4" startPc="268438386"/>
+<entry endPc="268438953" name="x" stackId="6" startPc="268438577"/>
+<entry endPc="268438953" name="timeX" stackId="5" startPc="268438577"/>
+<entry endPc="268438953" name="ampm" stackId="4" startPc="268438577"/>
+<entry endPc="268438953" name="clockTime" stackId="2" startPc="268438577"/>
+<entry endPc="268438953" name="time" stackId="3" startPc="268438577"/>
+<entry endPc="268439525" name="fillColor" stackId="8" startPc="268439055"/>
+<entry endPc="268439538" name="i" stackId="7" startPc="268439055"/>
+<entry endPc="268439538" name="w" stackId="5" startPc="268439009"/>
+<entry endPc="268439538" name="h" stackId="6" startPc="268439009"/>
+<entry endPc="268439538" name="yStart" stackId="4" startPc="268439009"/>
+<entry endPc="268439538" name="xStart" stackId="3" startPc="268439009"/>
+<entry endPc="268440658" name="i" stackId="6" startPc="268440604"/>
+<entry endPc="268440658" name="barColor" stackId="5" startPc="268440237"/>
+<entry endPc="268440658" name="yStart" stackId="2" startPc="268440237"/>
+<entry endPc="268440658" name="batLevel" stackId="4" startPc="268440237"/>
+<entry endPc="268440658" name="xStart" stackId="3" startPc="268440237"/>
+<entry endPc="268441410" name="slope" stackId="8" startPc="268441242"/>
+<entry endPc="268441410" name="vam" stackId="9" startPc="268441242"/>
+<entry endPc="268441413" name="dAltitude" stackId="7" startPc="268441224"/>
+<entry endPc="268441419" name="prevDegrees" stackId="4" startPc="268441024"/>
+<entry endPc="268441419" name="prevAltitude" stackId="3" startPc="268441024"/>
+<entry endPc="268441419" name="dist" stackId="6" startPc="268441024"/>
+<entry endPc="268441419" name="curDegrees" stackId="5" startPc="268441024"/>
+<entry endPc="268441780" name="a" stackId="9" startPc="268441537"/>
+<entry endPc="268441780" name="dLat" stackId="5" startPc="268441537"/>
+<entry endPc="268441780" name="dLon" stackId="6" startPc="268441537"/>
+<entry endPc="268441780" name="lat2" stackId="8" startPc="268441537"/>
+<entry endPc="268441780" name="lat1" stackId="7" startPc="268441537"/>
+<entry endPc="268441780" name="c" stackId="10" startPc="268441537"/>
+<entry endPc="268442003" name="i" stackId="1" startPc="268441978"/>
+<entry endPc="268442108" name="i" stackId="2" startPc="268442079"/>
+<entry endPc="268442127" name="avg" stackId="1" startPc="268442034"/>
+<entry endPc="268442305" name="element" stackId="1" startPc="268442249"/>
+<entry endPc="268442543" name="i" stackId="3" startPc="268442504"/>
+<entry endPc="268442627" name="i" stackId="4" startPc="268442579"/>
+<entry endPc="268442640" name="numValidSamples" stackId="2" startPc="268442426"/>
+<entry endPc="268442640" name="avg" stackId="1" startPc="268442426"/>
+<entry endPc="268442700" name="i" stackId="1" startPc="268442675"/>
+</localVars>
+<annotations/>
+<functions>
+<functionEntry name="initialize" parent="OmniBikeFieldApp">
+<documentation/>
+</functionEntry>
+<functionEntry name="onStart" parent="OmniBikeFieldApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onStop" parent="OmniBikeFieldApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="getInitialView" parent="OmniBikeFieldApp">
+<documentation><![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="initialize" parent="OmniBikeFieldView">
+<documentation/>
+</functionEntry>
+<functionEntry name="onLayout" parent="OmniBikeFieldView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="compute" parent="OmniBikeFieldView">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onUpdate" parent="OmniBikeFieldView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="drawLayout" parent="OmniBikeFieldView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="setBgColor" parent="OmniBikeFieldView">
+<documentation/>
+</functionEntry>
+<functionEntry name="drawGrid" parent="OmniBikeFieldView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="drawFields" parent="OmniBikeFieldView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="calculateDistance" parent="OmniBikeFieldView">
+<documentation/>
+</functionEntry>
+<functionEntry name="calculateSpeed" parent="OmniBikeFieldView">
+<documentation/>
+</functionEntry>
+<functionEntry name="drawTOD" parent="OmniBikeFieldView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="calculateAmPmHour" parent="OmniBikeFieldView">
+<param id="hour"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="drawSlope" parent="OmniBikeFieldView">
+<param id="dc"/>
+<param id="slope"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="drawGps" parent="OmniBikeFieldView">
+<param id="dc"/>
+<param id="gpsSignal"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="drawGpsSign" parent="OmniBikeFieldView">
+<param id="dc"/>
+<param id="xStart"/>
+<param id="yStart"/>
+<param id="color1"/>
+<param id="color2"/>
+<param id="color3"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="drawBattery" parent="OmniBikeFieldView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="initialize" parent="VamSlopeCalculator">
+<documentation><![CDATA[<div class="description"> Set the label of the data field here.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="compute" parent="VamSlopeCalculator">
+<param id="altitude"/>
+<param id="location"/>
+<documentation><![CDATA[<div class="description"> The given info object contains all the current workout<br/> information. Calculate a value and return it in this method.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="getVam" parent="VamSlopeCalculator">
+<documentation/>
+</functionEntry>
+<functionEntry name="getSlope" parent="VamSlopeCalculator">
+<documentation/>
+</functionEntry>
+<functionEntry name="getAltitude" parent="VamSlopeCalculator">
+<documentation/>
+</functionEntry>
+<functionEntry name="distance" parent="VamSlopeCalculator">
+<param id="latitude1"/>
+<param id="longitude1"/>
+<param id="latitude2"/>
+<param id="longitude2"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="deg2rad" parent="VamSlopeCalculator">
+<param id="deg"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="initialize" parent="DataQueue">
+<param id="arraySize"/>
+<documentation><![CDATA[<div class="description"> precondition: size has to be >= 2<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="add" parent="DataQueue">
+<param id="element"/>
+<documentation><![CDATA[<div class="description"> Add an element to the queue.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="reset" parent="DataQueue">
+<documentation><![CDATA[<div class="description"> Reset the queue to its initial state.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="getAverage" parent="DataQueue">
+<documentation/>
+</functionEntry>
+<functionEntry name="initialize" parent="DataBuffer">
+<param id="bufferSize"/>
+<param id="des"/>
+<documentation><![CDATA[<div class="description"> precondition: size has to be >= 2<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="push" parent="DataBuffer">
+<param id="element"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="pop" parent="DataBuffer">
+<documentation/>
+</functionEntry>
+<functionEntry name="getBufferSize" parent="DataBuffer">
+<documentation/>
+</functionEntry>
+<functionEntry name="isFull" parent="DataBuffer">
+<documentation/>
+</functionEntry>
+<functionEntry name="getAverage" parent="DataBuffer">
+<documentation/>
+</functionEntry>
+<functionEntry name="reset" parent="DataBuffer">
+<documentation><![CDATA[<div class="description"> Reset the queue to its initial state.<br/></div>]]></documentation>
+</functionEntry>
+</functions>
+</debugInfo>
