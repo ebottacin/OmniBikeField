@@ -2,17 +2,9 @@
 
   <properties>
     <property id="pBikeWeight" type="float">8.0</property>
-    <property id="pVAMThreshold" type="number">200</property>
+    <!-- <property id="pVAMThreshold" type="number">200</property> -->
     <property id="pVAMThresholdClimb" type="number">400</property>
-    <property id="pAltitudeThreshold" type="number">200</property>
-    <!-- 
-    <property id="pDTLoss" type="number">3</property>
-    <property id="pFrontalArea" type="float">0.509</property>
-    <property id="pDragCoefficent" type="float">0.63</property>
-    <property id="pRollingRestanceCoefficent" type="float">0.005</property>    
-    <property id="pAirDensity" type="float">1.226</property>
-    <property id="pGravityAcceleration" type="float">9.8067</property>
-     -->
+    <!-- <property id="pAltitudeThreshold" type="number">200</property> -->
   </properties>
 
   <strings>
@@ -20,17 +12,9 @@
     
     <string id="AppVersion">1.0.0</string>
     <string id="lBikeWeightDisplay">Bike Weight</string>
-    <string id="lVAMThresholdDisplay">VAM view Threshold (VAM is displayed in small font)</string>
+    <!-- <string id="lVAMThresholdDisplay">VAM view Threshold (VAM is displayed in small font)</string> -->
     <string id="lVAMThresholdClimbDisplay">VAM Climb Threshold (VAM is displayed in Normal font)</string>
-    <string id="lAltitudeThresholdDisplay">Altitude view Threshold (VAM is displayed in small font)</string>
-    <!-- 
-    <string id="lDTLossDisplay">DriveTrain loss (%)</string>
-    <string id="lFrontalAreaDisplay">Frontal Area (m^3)</string>
-    <string id="lDragCoefficentDisplay">Drag Coefficent</string>
-    <string id="lRollingResitanceCoefficentDisplay">Rolling Resistace Coefficent</string>
-    <string id="lAirDensityDisplay">Air Density (Kg/m^3)</string>
-    <string id="lGravitiyAccelerationDisplay">Gravity Acceleration (m/s^2)</string>
-     -->
+    <!-- <string id="lAltitudeThresholdDisplay">Altitude view Threshold (VAM is displayed in small font)</string> -->
   </strings>
 
 
@@ -38,35 +22,15 @@
     <setting propertyKey="@Properties.pBikeWeight" title="@Strings.lBikeWeightDisplay">
       <settingConfig type="numeric" required="true" />
     </setting>
-    <setting propertyKey="@Properties.pVAMThreshold" title="@Strings.lVAMThresholdDisplay">
+    <!-- <setting propertyKey="@Properties.pVAMThreshold" title="@Strings.lVAMThresholdDisplay">
       <settingConfig type="numeric" required="true" />
-    </setting>
+    </setting> -->
     <setting propertyKey="@Properties.pVAMThresholdClimb" title="@Strings.lVAMThresholdClimbDisplay">
       <settingConfig type="numeric" required="true" />
     </setting>
-    <setting propertyKey="@Properties.pAltitudeThreshold" title="@Strings.lAltitudeThresholdDisplay">
+    <!-- <setting propertyKey="@Properties.pAltitudeThreshold" title="@Strings.lAltitudeThresholdDisplay">
       <settingConfig type="numeric" required="true" />
-    </setting>
-     <!-- 
-    <setting propertyKey="@Properties.pDTLoss" title="@Strings.lDTLossDisplay">
-      <settingConfig type="numeric" required="true" />
-    </setting>
-    <setting propertyKey="@Properties.pFrontalArea" title="@Strings.lFrontalAreaDisplay">
-      <settingConfig type="numeric" required="true" />
-    </setting>
-    <setting propertyKey="@Properties.pDragCoefficent" title="@Strings.lDragCoefficentDisplay">
-      <settingConfig type="numeric" required="true" />
-    </setting>
-    <setting propertyKey="@Properties.pRollingRestanceCoefficent" title="@Strings.lRollingResitanceCoefficentDisplay">
-      <settingConfig type="numeric" required="true" />
-    </setting>
-    <setting propertyKey="@Properties.pAirDensity" title="@Strings.lAirDensityDisplay">
-      <settingConfig type="numeric" required="true" />
-    </setting>
-    <setting propertyKey="@Properties.pGravityAcceleration" title="@Strings.lGravitiyAccelerationDisplay">
-      <settingConfig type="numeric" required="true" />
-    </setting>
-     -->
+    </setting> -->
   </settings>
 
  
