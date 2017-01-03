@@ -200,7 +200,7 @@ class OmniBikeFieldView extends Ui.DataField {
         }
            	
        	mElapsedTime = info.timerTime != null ? info.timerTime / 1000 : 0 ;
-       	//mElapsedTime = 3599+3600;
+       	//mElapsedTime = 3599+2;
        	mHr = info.currentHeartRate != null ? info.currentHeartRate : 0 ;
        	mDst = info.elapsedDistance != null ? info.elapsedDistance : 0;
        	
@@ -370,10 +370,10 @@ class OmniBikeFieldView extends Ui.DataField {
 		
 		//elapsed
 		if ((mElapsedTime/3600)>0) {
-			dc.drawText(2, 36, Gfx.FONT_XTINY, (mElapsedTime / 3600).format("%.1d"), CENTER);
-			formattedValue = Lang.format("$1$:$2$", [ ((mElapsedTime % 3600) / 60), (mElapsedTime % 60).format("%.2d")]);
+			dc.drawText(2, 36, Gfx.FONT_XTINY, (mElapsedTime / 3600).format("%01d"), CENTER);
+			formattedValue = Lang.format("$1$:$2$", [ ((mElapsedTime % 3600) / 60).format("%02d"), (mElapsedTime % 60).format("%02d")]);
 		} else {
-			formattedValue = Lang.format("$1$:$2$", [ (mElapsedTime / 60), (mElapsedTime % 60).format("%.2d")]);
+			formattedValue = Lang.format("$1$:$2$", [ (mElapsedTime / 60).format("%02d"), (mElapsedTime % 60).format("%02d")]);
 		}
 		dc.drawText(35, 60, VALUE_FONT, formattedValue, CENTER);
 		
