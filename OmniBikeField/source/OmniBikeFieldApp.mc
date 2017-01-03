@@ -33,9 +33,23 @@ class OmniBikeFieldView extends Ui.DataField {
     hidden const HEADER_FONT = Gfx.FONT_XTINY;
     hidden const VALUE_FONT = Gfx.FONT_NUMBER_MEDIUM;
     hidden const VALUE_FONT_SM = Gfx.FONT_NUMBER_MILD;
-    hidden const VAM_THRESHOLD =100;
-    hidden const VAM_THRESHOLD_CLIMB =400;
-    hidden const ALT_THRESHOLD = 200;
+   
+	hidden var VAM_THRESHOLD =100;
+    hidden var VAM_THRESHOLD_CLIMB =400;
+    hidden var ALT_THRESHOLD = 200;
+    
+     //Drivetrain Loss (%)
+    hidden var LOSS_DT = 3;    
+    //Frontal Area (m^3)
+    hidden var F_A = 0.509;
+    //Drag Coefficent
+    hidden var C_D = 0.63;
+    //Rolling Resistance Coefficent
+    hidden var C_RR = 0.005;
+    //Air density (kg/m^3)
+    hidden var RHO = 1.226;
+    //Gravity Acceleration
+    hidden var G = 9.8067;
     
     hidden var uHrZones = [ 93, 111, 130, 148, 167, 185 ];
     
@@ -46,7 +60,7 @@ class OmniBikeFieldView extends Ui.DataField {
     hidden var mGpsSignal;
     //hidden var mIsDistanceUnitsMetric;
     //hidden var mIsSpeedUnitsMetric;
-    hidden var mIs24Hour;
+    //hidden var mIs24Hour;
     
     hidden var mElapsedTime;
     hidden var mHr;
@@ -66,10 +80,26 @@ class OmniBikeFieldView extends Ui.DataField {
         mVamSlopeCalculator = new VamSlopeCalculator();
         mSingleField=false;
         mGpsSignal =0;
+       
+        /*
+        var app = Application.getApp();
+ 		
+ 		mBikeW = app.getProperty("pBikeWeight");
+ 		
+ 		VAM_THRESHOLD = app.getProperty("pVAMThreshold");
+ 		VAM_THRESHOLD_CLIMB = app.getProperty("pVAMThresholdClimb");
+ 		ALT_THRESHOLD = app.getProperty("pAltitudeThreshold");
+ 		LOSS_DT = app.getProperty("pDTLoss");
+ 		F_A = app.getProperty("pFrontalArea");
+ 		C_D = app.getProperty("pDragCoefficent");
+ 		C_RR = app.getProperty("pRollingRestanceCoefficent");
+ 		RHO = app.getProperty("pAirDensity");
+ 		G = app.getProperty("pGravityAcceleration");
+        */
         
         //mIsDistanceUnitsMetric = System.getDeviceSettings().distanceUnits == System.UNIT_METRIC;
         //mIsSpeedUnitsMetric = System.getDeviceSettings().paceUnits == System.UNIT_METRIC;
-        mIs24Hour = System.getDeviceSettings().is24Hour;
+        //mIs24Hour = System.getDeviceSettings().is24Hour;
         
         var mProfile = UserProfile.getProfile();
         if (mProfile != null) {
@@ -139,7 +169,7 @@ class OmniBikeFieldView extends Ui.DataField {
         drawGps(dc,mGpsSignal);
         drawBattery(dc);
         drawTOD(dc);
-        drawSlope(dc,mVamSlopeCalculator.getSlope());
+        //drawSlope(dc,mVamSlopeCalculator.getSlope());
 		drawGrid(dc);
 		drawFields(dc);
     }
@@ -287,18 +317,7 @@ class OmniBikeFieldView extends Ui.DataField {
 	    }
     }
     
-    //Drivetrain Loss (%)
-    hidden const LOSS_DT = 3;    
-    //Frontal Area (m^3)
-    hidden const F_A = 0.509;
-    //Drag Coefficent
-    hidden const C_D = 0.63;
-    //Rolling Resistance Coefficent
-    hidden const C_RR = 0.005;
-    //Air density (kg/m^3)
-    hidden const RHO = 1.226;
-    //Gravity Acceleration
-    hidden const G = 9.8067;
+   
     
     //https://www.gribble.org/cycling/power_v_speed.html
     function calculatePwr(slope,vel) {
@@ -319,28 +338,12 @@ class OmniBikeFieldView extends Ui.DataField {
      	var clockTime = System.getClockTime();
         var time, ampm;
         var x= dc.getWidth()/2;
-        
-        if (mIs24Hour) {
-            time = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%.2d")]);
-            ampm = "";
-        } else {
-            time = Lang.format("$1$:$2$", [calculateAmPmHour(clockTime.hour), clockTime.min.format("%.2d")]);
-            ampm = (clockTime.hour < 12) ? "am" : "pm";
-        }
+        time = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%.2d")]);
         dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
         dc.drawText(x, 10, Gfx.FONT_XTINY, time, CENTER);
-        dc.drawText(x + 28, 10, Gfx.FONT_XTINY, ampm, CENTER);
     }
     
-    function calculateAmPmHour(hour) {
-        if (hour == 0) {
-            return 12;
-        } else if (hour > 12) {
-            return hour - 12;
-        }
-        return hour;
-    }
-    
+    /*
     function drawSlope(dc,slope) {
        	var xStart = 0;
        	var yStart = 80;
@@ -374,6 +377,7 @@ class OmniBikeFieldView extends Ui.DataField {
             }    
         }
     }
+    */
     
     function drawGps(dc,gpsSignal) {
     	var color;
@@ -390,62 +394,6 @@ class OmniBikeFieldView extends Ui.DataField {
         dc.drawText(190, 10, Gfx.FONT_SYSTEM_XTINY, "GPS", CENTER);
     }
     
-    /* 
-    function drawGps(dc,gpsSignal) {
-        if (gpsSignal == null || gpsSignal < 2) {
-            drawGpsSign(dc, 180, 0, Gfx.COLOR_LT_GRAY, Gfx.COLOR_LT_GRAY, Gfx.COLOR_LT_GRAY);
-        } else if (gpsSignal == 2) {
-            drawGpsSign(dc, 180, 0, Gfx.COLOR_DK_GREEN, Gfx.COLOR_LT_GRAY, Gfx.COLOR_LT_GRAY);
-        } else if (gpsSignal == 3) {
-            drawGpsSign(dc, 180, 0, Gfx.COLOR_DK_GREEN, Gfx.COLOR_DK_GREEN, Gfx.COLOR_LT_GRAY);
-        } else {
-            drawGpsSign(dc, 180, 0, Gfx.COLOR_DK_GREEN, Gfx.COLOR_DK_GREEN, Gfx.COLOR_DK_GREEN);
-        }
-    }
-
-    function drawGpsSign(dc, xStart, yStart, color1, color2, color3) {
-        dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
-        dc.drawRectangle(xStart - 1, yStart + 11, 8, 10);
-        dc.setColor(color1, Gfx.COLOR_TRANSPARENT);
-        dc.fillRectangle(xStart, yStart + 12, 6, 8);
-
-        dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
-        dc.drawRectangle(xStart + 6, yStart + 7, 8, 14);
-        dc.setColor(color2, mBgColor);
-        dc.fillRectangle(xStart + 7, yStart + 8, 6, 12);
-
-        dc.setColor(mFgColor, Gfx.COLOR_TRANSPARENT);
-        dc.drawRectangle(xStart + 13, yStart + 3, 8, 18);
-        dc.setColor(color3, Gfx.COLOR_TRANSPARENT);
-        dc.fillRectangle(xStart + 14, yStart + 4, 6, 16);
-    }
-    
-      
-    function drawBattery(dc) {
-        var yStart = 3;
-        var xStart = 1;
-       
-        var batLevel = System.getSystemStats().battery;
-        var barColor;
-       	if (batLevel>=10) {
-       		barColor = Gfx.COLOR_DK_GREEN;
-       	} else {
-       		barColor = Gfx.COLOR_DK_RED;
-       	}
-
-        dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
-        dc.drawRectangle(xStart, yStart, 29, 18);
-        dc.drawRectangle(xStart + 1, yStart + 1, 27, 16);
-        dc.fillRectangle(xStart + 29, yStart + 4, 2, 9);
-        dc.setColor(barColor, Gfx.COLOR_TRANSPARENT);
-        if (batLevel<10) {
-        	dc.drawText(xStart+13, yStart + 1, Gfx.FONT_XTINY, batLevel.format("%1d"), Gfx.TEXT_JUSTIFY_CENTER);
-        }
-        for (var i = 0; i < (24 * System.getSystemStats().battery / 100); i = i + 3) {
-            dc.fillRectangle(xStart + 3 + i, yStart + 3, 2, 12);    
-        }
-    }
-    */
     function drawBattery(dc) {
         var batLevel = System.getSystemStats().battery;
         var barColor;
@@ -465,11 +413,8 @@ class VamSlopeCalculator {
     hidden const QUEUE_SIZE=5;
     hidden const R = 6372800; // metres
     
-    hidden var mVamSamples;
-    hidden var mSlopeSamples;
-  
-    hidden var mLocationBuffer;
-    hidden var mAltitudeBuffer;
+    hidden var mSamples;
+    hidden var mBuffer;
     hidden var mTick;
     
     hidden var mVamSpeed;
@@ -480,11 +425,13 @@ class VamSlopeCalculator {
     //! Set the label of the data field here.
     function initialize() {
        
-        mVamSamples= new DataQueue(QUEUE_SIZE);
-        mSlopeSamples = new DataQueue(QUEUE_SIZE);
+        //mVamSamples= new DataBuffer(QUEUE_SIZE,"vam");
+        //mSlopeSamples = new DataBuffer(QUEUE_SIZE,"slope");
+        mSamples = new DataBuffer(QUEUE_SIZE);
         
-  		mLocationBuffer = new DataBuffer(BUFFER_SIZE,"location");
-  		mAltitudeBuffer = new DataBuffer(BUFFER_SIZE,"altitude");
+        mBuffer = new DataBuffer(BUFFER_SIZE);
+  		//mLocationBuffer = new DataBuffer(BUFFER_SIZE,"location");
+  		//mAltitudeBuffer = new DataBuffer(BUFFER_SIZE,"altitude");
   		mTick = 0;
   		mVamSpeed = 0;
   		mSlope = 0;
@@ -500,20 +447,18 @@ class VamSlopeCalculator {
         if (location == null) {
         	if (mTick>0) {
         		mTick=0;
-        		mAltitudeBuffer.reset();
-        		mLocationBuffer.reset();
-        		mSlopeSamples.reset();
-        		mVamSpeed.reset();
+        		mSamples.reset();
+        		mBuffer.reset();
         	}
         	return;
         }
         if (mTick>=(BUFFER_SIZE-1)) {
-	        var prevAltitude = mAltitudeBuffer.pop();
-	        mAltitudeBuffer.push(altitude);
-	        
-	        var prevDegrees = mLocationBuffer.pop();
-	        var curDegrees = location.toDegrees();
-	        mLocationBuffer.push(curDegrees);
+	        var prevBufElement = mBuffer.pop();
+	        var prevAltitude = prevBufElement[0];
+	        var prevDegrees = prevBufElement[1];
+	       	var curDegrees = location.toDegrees(); 
+	       	
+	        mBuffer.push([altitude,location.toDegrees()]);
 	         
 	        var dist = distance(prevDegrees[0].toDouble(),prevDegrees[1].toDouble(),curDegrees[0].toDouble(),curDegrees[1].toDouble());
 	         
@@ -524,19 +469,17 @@ class VamSlopeCalculator {
 		        	if ( dAltitude !=0) {
 		        		var slope = Math.asin(dAltitude/dist)*100;
 		        		var vam= (dAltitude*3600)/(BUFFER_SIZE-1);
-		        		mSlopeSamples.add(slope);
-		        		mVamSamples.add(vam);
-		        		mVamSpeed = mVamSamples.getAverage();
-		        		mSlope = mSlopeSamples.getAverage();
-		        		mAltitude = mAltitudeBuffer.getAverage();
+		        		mSamples.add([slope,vam]);
+		        		mSlope = mSamples.getAverage(0);
+		        		mVamSpeed = mSamples.getAverage(1);
+		        		mAltitude = mBuffer.getAverage(0);
 		        		//System.println("vam: " + mVamSpeed + ", slope: " + mSlope);
 		        	}	
 		        } 
 		    }
 	    } else {
 	    	mTick++;
-	    	mLocationBuffer.push(location.toDegrees());
-	    	mAltitudeBuffer.push(altitude);
+	    	mBuffer.push([altitude,location.toDegrees()]);
         }
 		//System.println("altitude: " + altitude + ", speed: " + speed + ", distance: " + dist);
     }
@@ -555,7 +498,6 @@ class VamSlopeCalculator {
  
  	//Haversine Formula
   	function distance(latitude1,longitude1,latitude2,longitude2) {
-		//System.println("(lat1,lon1) , (lat2,lon2) = (" + latitude1 + "," + longitude1 + ") , (" + latitude2 +"," + longitude2 + ")");
 		//http://www.movable-type.co.uk/scripts/latlong.html
 		
 		var dLat = deg2rad(latitude2-latitude1);
@@ -575,84 +517,43 @@ class VamSlopeCalculator {
 	}
 } // end SlopeCalculator
 
-
-//! A circular queue implementation.
-//! @author Konrad Paumann
-class DataQueue {
-
-    //! the data array.
-    hidden var data;
-    hidden var maxSize = 0;
-    hidden var pos = 0;
-    hidden var numValidSamples;
-
-    //! precondition: size has to be >= 2
-    function initialize(arraySize) {
-        data = new[arraySize];
-        maxSize = arraySize;
-        numValidSamples=0;
-    }
-    
-    //! Add an element to the queue.
-    function add(element) {
-        data[pos] = element;
-        pos = (pos + 1) % maxSize;
-        if (numValidSamples<maxSize) {
-        	numValidSamples++;
-        }
-    }
-    
-    //! Reset the queue to its initial state.
-    function reset() {
-        for (var i = 0; i < data.size(); i++) {
-            data[i] = null;
-        }
-        pos = 0;
-        numValidSamples=0;
-    }
-    
-    function getAverage() {
-    	var avg=0;
-    	if (numValidSamples>0) {
-	    	for (var i=0; i<numValidSamples;i++) {
-	    		avg+=data[i];		
-	    	}
-	    	avg= avg /numValidSamples;
-    	}
-    	return avg;
-    }   
-}
-
 class DataBuffer {
 
     //! the data array.
     hidden var data;
-    hidden var type;
     hidden var maxSize;
     hidden var startPos;
     hidden var endPos;
 
     //! precondition: size has to be >= 2
-    function initialize(bufferSize,des) {
+    function initialize(bufferSize) {
         data = new[bufferSize];
-        type = des;
         maxSize = bufferSize;
-        startPos = 0;
-        endPos = 0;
+        startPos = 0;  // first element index
+        endPos = 0; // first free element index
     }
       
     function push(element) {
-    	//System.println("push  (endPos: " + endPos + ",startPos:" + startPos + ") for element " + element); 
         data[endPos] = element;
         endPos = (endPos + 1) % maxSize;
+        //System.println("push  (endPos: " + endPos + ",startPos:" + startPos + ") for element " + element + " - " + toString());
     }
     
     function pop() { 
-    	//System.println("pop (endPos: " + endPos + ",startPos:" + startPos + ")");
+    	//System.println("pop (endPos: " + endPos + ",startPos:" + startPos + ") element " + data[startPos] + " - " + toString());
         var element=null;
         element = data[startPos];
         startPos = (startPos + 1) % maxSize;
         return element;
+    }
+    
+    function add(element) {
+    	if (startPos==((endPos+1) % maxSize)) {
+    		startPos = (startPos + 1) % maxSize;
+    	} 
+    	data[endPos]=element;
+    	endPos = (endPos+1) % maxSize;
+    	//System.println("element Added" + toString());
     }
     
     function getBufferSize() {
@@ -671,19 +572,19 @@ class DataBuffer {
     	}
     }
     
-     function getAverage() {
+     function getAverage(idx) {
     	var avg=0;
     	var numValidSamples=0;
     	//System.println("average on buffer : " + toString());
     	if (startPos!=endPos) {
 	    	if (startPos<endPos) {
-		    	for (var i=startPos; i<=endPos;i++) {
-		    		avg+=data[i];
+		    	for (var i=startPos; i<endPos;i++) {
+		    		avg+=(idx==null ? data[i] : data[i][idx]);
 		    		numValidSamples++;		
 		    	}
 		    } else {
-		    	for (var i=startPos; i<=endPos+maxSize;i++) {
-		    		avg+=data[i % maxSize];
+		    	for (var i=startPos; i<endPos+maxSize;i++) {
+		    		avg+=(idx==null ? data[i % maxSize] : data[i % maxSize][idx]) ;
 		    		numValidSamples++;		
 		    	}
 		    }
@@ -702,4 +603,18 @@ class DataBuffer {
         startPos = 0;
         endPos = 0;
     }
+    
+    /*
+    function toString() {
+    	var ret = "";
+    	for (var i=0; i<maxSize;i++) {
+    		if (i!= 0) {
+    			ret += ",";
+    		}
+    		ret+=data[i];		
+    	}
+    
+    	return "[startPos=" + startPos + "][endPos=" + endPos + "][" + ret + "]";
+    }
+    */
 }
