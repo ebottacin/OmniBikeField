@@ -10,7 +10,7 @@
   <strings>
     <string id="AppName">OmniBikeField</string>
     
-    <string id="AppVersion">1.0.0</string>
+    <string id="AppVersion">1.0.1</string>
     <string id="lBikeWeightDisplay">Bike Weight</string>
     <string id="lVAMThresholdDisplay">VAM view Threshold (VAM is displayed in small font)</string>
     <string id="lVAMThresholdClimbDisplay">VAM Climb Threshold (VAM is displayed in Normal font)</string>
