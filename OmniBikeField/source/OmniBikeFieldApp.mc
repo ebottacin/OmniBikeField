@@ -46,7 +46,7 @@ class OmniBikeFieldView extends Ui.DataField {
     hidden var G = 9.8067; //Gravity Acceleration
     
     hidden const BUFFER_SIZE=5;
-    hidden const QUEUE_SIZE=7;
+    hidden const QUEUE_SIZE=10;
     hidden const R = 6372800; // metres
     
     hidden var mSamples;
@@ -95,9 +95,9 @@ class OmniBikeFieldView extends Ui.DataField {
  		
  		mBikeW = app.getProperty("pBikeWeight");
  		
- 		//VAM_THRESHOLD = app.getProperty("pVAMThreshold");
+ 		VAM_THRESHOLD = app.getProperty("pVAMThreshold");
  		VAM_THRESHOLD_CLIMB = app.getProperty("pVAMThresholdClimb");
- 		//ALT_THRESHOLD = app.getProperty("pAltitudeThreshold");
+ 		ALT_THRESHOLD = app.getProperty("pAltitudeThreshold");
         
         mIsDistanceUnitsMetric = System.getDeviceSettings().distanceUnits == System.UNIT_METRIC;
         mIsSpeedUnitsMetric = System.getDeviceSettings().paceUnits == System.UNIT_METRIC;
@@ -526,23 +526,24 @@ class OmniBikeFieldView extends Ui.DataField {
        	} else {
        		barColor = Gfx.COLOR_DK_RED;
        	}
-		dc.setColor(barColor,Gfx.COLOR_TRANSPARENT);
-        dc.drawText(3, 2, Gfx.FONT_XTINY, "Bat: "+batLevel.format("%1d") +"%", Gfx.TEXT_JUSTIFY_LEFT);
+		
+		//!dc.setColor(barColor,Gfx.COLOR_TRANSPARENT);
+        //!dc.drawText(3, 2, Gfx.FONT_XTINY, "Bat: "+batLevel.format("%1d") +"%", Gfx.TEXT_JUSTIFY_LEFT);
         
-        //!var yStart = 3;
-        //!var xStart = 1;
-		//!dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
-        //!dc.drawRectangle(xStart, yStart, 29, 15);
-        //!dc.drawRectangle(xStart + 1, yStart + 1, 27, 13);
-        //!dc.fillRectangle(xStart + 29, yStart + 3, 2, 9);
-        //!dc.setColor(barColor, Gfx.COLOR_TRANSPARENT);
-        //!
-        //!for (var i = 0; i < (24 * System.getSystemStats().battery / 100); i = i + 3) {
-        //!    dc.fillRectangle(xStart + 3 + i, yStart + 3, 2, 9);    
-        //!}
-        //!
-		//!dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
-        //!dc.drawText(36, 3, Gfx.FONT_XTINY, batLevel.format("%1d") +"%", Gfx.TEXT_JUSTIFY_LEFT);
+        var yStart = 3;
+        var xStart = 1;
+		dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
+        dc.drawRectangle(xStart, yStart, 29, 15);
+        dc.drawRectangle(xStart + 1, yStart + 1, 27, 13);
+        dc.fillRectangle(xStart + 29, yStart + 3, 2, 9);
+        dc.setColor(barColor, Gfx.COLOR_TRANSPARENT);
+        
+        for (var i = 0; i < (24 * System.getSystemStats().battery / 100); i = i + 3) {
+            dc.fillRectangle(xStart + 3 + i, yStart + 3, 2, 9);    
+        }
+        
+		dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
+        dc.drawText(36, 3, Gfx.FONT_XTINY, batLevel.format("%1d") +"%", Gfx.TEXT_JUSTIFY_LEFT);
     }
 } // end View
 
