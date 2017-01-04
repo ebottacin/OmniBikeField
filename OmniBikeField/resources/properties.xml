@@ -14,7 +14,7 @@
     <string id="lBikeWeightDisplay">Bike Weight</string>
     <string id="lVAMThresholdDisplay">VAM view Threshold (VAM is displayed in small font)</string>
     <string id="lVAMThresholdClimbDisplay">VAM Climb Threshold (VAM is displayed in Normal font)</string>
-    <string id="lAltitudeThresholdDisplay">Altitude view Threshold (VAM is displayed in small font)</string>
+    <string id="lAltitudeThresholdDisplay">Altitude view Threshold</string>
   </strings>
 
 
