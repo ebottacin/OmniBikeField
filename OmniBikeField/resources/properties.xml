@@ -2,8 +2,8 @@
 
   <properties>
     <property id="pBikeWeight" type="float">8.0</property>
-    <property id="pVAMThreshold" type="number">200</property>
-    <property id="pVAMThresholdClimb" type="number">400</property>
+    <property id="pVAMThreshold" type="number">300</property>
+    <property id="pVAMThresholdClimb" type="number">500</property>
     <property id="pAltitudeThreshold" type="number">200</property>
   </properties>
 

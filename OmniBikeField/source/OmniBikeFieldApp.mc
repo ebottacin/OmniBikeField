@@ -34,8 +34,8 @@ class OmniBikeFieldView extends Ui.DataField {
     hidden const VALUE_FONT = Gfx.FONT_NUMBER_MEDIUM;
     hidden const VALUE_FONT_SM = Gfx.FONT_NUMBER_MILD;
    
-	hidden var VAM_THRESHOLD =200;
-    hidden var VAM_THRESHOLD_CLIMB =400;
+	hidden var VAM_THRESHOLD =300;
+    hidden var VAM_THRESHOLD_CLIMB =500;
     hidden var ALT_THRESHOLD = 200;
     
     hidden var LOSS_DT = 3; //Drivetrain Loss (%)    
@@ -67,7 +67,7 @@ class OmniBikeFieldView extends Ui.DataField {
     hidden var mIsSpeedUnitsMetric;
     hidden var mIs24Hour;
     
-    hidden var mElapsedTime;
+    hidden var mTimerTime;
     hidden var mHr;
     hidden var mDst;
     hidden var mCad;
@@ -188,14 +188,14 @@ class OmniBikeFieldView extends Ui.DataField {
         	mCad = info.currentCadence != null ? info.currentCadence : 0;	
         }
            	
-       	mElapsedTime = info.timerTime != null ? info.timerTime / 1000 : 0 ;
-       	//!mElapsedTime = 3599+2;
+       	mTimerTime = info.timerTime != null ? info.timerTime / 1000 : 0 ;
+       	//!mTimerTime = 3599+2;
        	mHr = info.currentHeartRate != null ? info.currentHeartRate : 0 ;
        	mDst = info.elapsedDistance != null ? info.elapsedDistance : 0;
        	
         
    		mGpsSignal = info.currentLocationAccuracy;
-   		//!System.println("[altitude:" + mAltitude + "][vam:" + mVamSpeed +"][slope:" + mSlope + "][timer:" + mElapsedTime+"][spd:" + mSpd + "][HR:" + mHr + "][dst:" + mDst + "][cad:" + mCad + "][pwr:" + mPwr + "][gpsSignal:" + mGpsSignal + "]");
+   		//!System.println("[altitude:" + mAltitude + "][vam:" + mVamSpeed +"][slope:" + mSlope + "][timer:" + mTimerTime+"][spd:" + mSpd + "][HR:" + mHr + "][dst:" + mDst + "][cad:" + mCad + "][pwr:" + mPwr + "][gpsSignal:" + mGpsSignal + "]");
     }
     
      function computeVamSlope(altitude,location) {
@@ -361,12 +361,12 @@ class OmniBikeFieldView extends Ui.DataField {
         dc.setPenWidth(1);
 		var formattedValue;
 		
-		//!elapsed
-		if ((mElapsedTime/3600)>0) {
-			dc.drawText(2, 36, Gfx.FONT_XTINY, (mElapsedTime / 3600).format("%01d"), CENTER);
-			formattedValue = Lang.format("$1$:$2$", [ ((mElapsedTime % 3600) / 60).format("%02d"), (mElapsedTime % 60).format("%02d")]);
+		//!timer
+		if ((mTimerTime/3600)>0) {
+			dc.drawText(2, 36, Gfx.FONT_XTINY, (mTimerTime / 3600).format("%01d"), CENTER);
+			formattedValue = Lang.format("$1$:$2$", [ ((mTimerTime % 3600) / 60).format("%02d"), (mTimerTime % 60).format("%02d")]);
 		} else {
-			formattedValue = Lang.format("$1$:$2$", [ (mElapsedTime / 60).format("%02d"), (mElapsedTime % 60).format("%02d")]);
+			formattedValue = Lang.format("$1$:$2$", [ (mTimerTime / 60).format("%02d"), (mTimerTime % 60).format("%02d")]);
 		}
 		dc.drawText(35, 60, VALUE_FONT, formattedValue, CENTER);
 		
@@ -378,26 +378,25 @@ class OmniBikeFieldView extends Ui.DataField {
         //!Cadence
         dc.drawText(29, 125, VALUE_FONT, (mCad>0 ? mCad : "---"), CENTER);
         
-        //!Vel-Vam
 		if (mVamSpeed>VAM_THRESHOLD_CLIMB) {
-			//!Vel-Vam
+			//!Vam-Spd
 			dc.drawText(108, 118, VALUE_FONT_SM, mVamSpeed.format("%d"), Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_VCENTER);
-			dc.drawText(108, 136, Gfx.FONT_XTINY, calculateSpeed(), Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_VCENTER);
+			dc.drawText(102, 136, Gfx.FONT_XTINY, calculateSpeed(), Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_VCENTER);
 		} else if (mVamSpeed>VAM_THRESHOLD) {
-			//!Vel-Vam
+			//!Spd-Vam
 			dc.drawText(108, 118, VALUE_FONT_SM, calculateSpeed(), Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_VCENTER);
-			dc.drawText(106, 136, Gfx.FONT_XTINY,  mVamSpeed.format("%d"), Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_VCENTER);
+			dc.drawText(102, 136, Gfx.FONT_XTINY,  mVamSpeed.format("%d"), Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_VCENTER);
 		} else {
-			//!Vel
+			//!Spd
 			dc.drawText(101, 125, VALUE_FONT, calculateSpeed(), CENTER);
 		} 
 		
 		if (mAltitude>ALT_THRESHOLD) {
-			//!Alt-Cal
+			//!Pwr-Alt
 	        dc.drawText(180, 118, VALUE_FONT_SM,  mPwr.format("%d"), Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_VCENTER);
-	        dc.drawText(180, 136, Gfx.FONT_XTINY, mAltitude.format("%d"), Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_VCENTER);
+	        dc.drawText(170, 136, Gfx.FONT_XTINY, mAltitude.format("%d"), Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_VCENTER);
 		} else {
-			//!pwr
+			//!Pwr
 	        dc.drawText(168, 125, VALUE_FONT, (mPwr>0 ? mPwr.format("%d") : "---"), CENTER);	
 		}
         dc.setPenWidth(1);    
@@ -522,7 +521,7 @@ class OmniBikeFieldView extends Ui.DataField {
         var batLevel = System.getSystemStats().battery;
         var barColor;
        	if (batLevel>=10) {
-       		barColor = mFgColor;
+       		barColor = Gfx.COLOR_DK_GREEN;
        	} else {
        		barColor = Gfx.COLOR_DK_RED;
        	}
