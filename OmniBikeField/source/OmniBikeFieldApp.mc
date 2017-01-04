@@ -208,15 +208,19 @@ class OmniBikeFieldView extends Ui.DataField {
         	}
         	return;
         }
+        var curLat = location.toDegrees()[0].toFloat();
+        var curLon = location.toDegrees()[1].toFloat();
+        
         if (mTick>=(BUFFER_SIZE-1)) {
 	        var prevBufElement = mBuffer.pop();
 	        var prevAltitude = prevBufElement[0];
-	        var prevDegrees = prevBufElement[1];
-	       	var curDegrees = location.toDegrees(); 
+	        var prevLat = prevBufElement[1];
+	        var prevLon = prevBufElement[2];
+	       	 
 	       	
-	        mBuffer.push([altitude,location.toDegrees()]);
+	        mBuffer.push([altitude,curLat,curLon]);
 	         
-	        var dist = distance(prevDegrees[0].toDouble(),prevDegrees[1].toDouble(),curDegrees[0].toDouble(),curDegrees[1].toDouble());
+	        var dist = distance(prevLat,prevLon,curLat,curLon);
 	         
 	        if (dist != 0.0) {
 		        if (prevAltitude != null && altitude != null) {
@@ -235,7 +239,7 @@ class OmniBikeFieldView extends Ui.DataField {
 		    }
 	    } else {
 	    	mTick++;
-	    	mBuffer.push([altitude,location.toDegrees()]);
+	    	mBuffer.push([altitude,curLat,curLon]);
         }
     }
         
