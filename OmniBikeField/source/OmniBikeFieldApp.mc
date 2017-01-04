@@ -46,7 +46,7 @@ class OmniBikeFieldView extends Ui.DataField {
     hidden var G = 9.8067; //Gravity Acceleration
     
     hidden const BUFFER_SIZE=5;
-    hidden const QUEUE_SIZE=10;
+    hidden const QUEUE_SIZE=8;
     hidden const R = 6372800; // metres
     
     hidden var mSamples;
@@ -230,9 +230,6 @@ class OmniBikeFieldView extends Ui.DataField {
 		        		var slope = Math.asin(dAltitude/dist)*100;
 		        		var vam= (dAltitude*3600)/(BUFFER_SIZE-1);
 		        		mSamples.add([slope,vam]);
-		        		mSlope = mSamples.getAverage(0);
-		        		mVamSpeed = mSamples.getAverage(1);
-		        		mAltitude = mBuffer.getAverage(0);
 		        		//!System.println("vam: " + mVamSpeed + ", slope: " + mSlope);
 		        	}	
 		        } 
@@ -267,6 +264,10 @@ class OmniBikeFieldView extends Ui.DataField {
     //! once a second when the data field is visible.
     function onUpdate(dc) {
 		if (mSingleField) {
+		   //!Compute average only if field is displayed
+			mSlope = mSamples.getAverage(0);
+		    mVamSpeed = mSamples.getAverage(1);
+		    mAltitude = mBuffer.getAverage(0);
 			drawLayout(dc);     
 		}
     }
@@ -469,35 +470,35 @@ class OmniBikeFieldView extends Ui.DataField {
     }
     
     function drawSlope(dc,slope) {
-       	var xStart = 0;
-       	var yStart = 80;
-		var w=9;
-		var h=6;   
+       	var slopeSign = slope>=0 ? 1 : -1;
+       	var xStart = slopeSign == 1 ? 0 : 196;
+       	var w=9*slopeSign;
 		    
     	for (var i = 0; i < 23; i++) {
             var fillColor;
             if (i < 5) {
-            	fillColor = Gfx.COLOR_GREEN;
+            	fillColor = slope>0 ? Gfx.COLOR_GREEN : Gfx.COLOR_BLUE;
             } else if ( i>=5 and i<10) {
-            	fillColor = Gfx.COLOR_DK_GREEN;
+            	fillColor = slope>0 ? Gfx.COLOR_DK_GREEN : Gfx.COLOR_DK_BLUE;
             } else if ( i>=10 and i<15) {
-            	fillColor = Gfx.COLOR_ORANGE;
+            	fillColor = slope>0 ? Gfx.COLOR_ORANGE : Gfx.COLOR_LT_GRAY;
             } else if ( i>=15 and i<20) {
-            	fillColor = Gfx.COLOR_RED;
+            	fillColor = slope>0 ? Gfx.COLOR_RED : Gfx.COLOR_DK_GRAY;
             } else {
-            	fillColor = Gfx.COLOR_DK_RED;
+            	fillColor = slope>0 ? Gfx.COLOR_DK_RED : Gfx.COLOR_BLACK;
             }
             
             dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
+            var x = xStart + i*w;
             if (i==5 || i == 10 || i == 15 || i ==20 || i ==25) {
-            	dc.drawLine(xStart + 1 + i*w, yStart+5,xStart + 1 + i*w,yStart+9);
+            	dc.drawLine(x+ slopeSign,85,x+ slopeSign,89);
             } else {
-            	dc.drawLine(xStart + 1 + i*w, yStart+7,xStart + 1 + i*w,yStart+9);
+            	dc.drawLine(x+ slopeSign, 87,x+ slopeSign,89);
             }
             
-            if (slope != null && i < slope) {
+            if (slope != null && i < slope*slopeSign) {
             	dc.setColor(fillColor,Gfx.COLOR_TRANSPARENT);
-            	dc.fillRectangle(xStart + 3 + i*w, yStart + 2, 6, h);
+            	dc.fillRectangle(x + (slopeSign > 0 ? 3: 1) , 82, 6, 6);
             }    
         }
     }
@@ -522,23 +523,25 @@ class OmniBikeFieldView extends Ui.DataField {
         var barColor;
        	if (batLevel>=10) {
        		barColor = Gfx.COLOR_DK_GREEN;
+       		//barColor = mFgColor;
        	} else {
        		barColor = Gfx.COLOR_DK_RED;
        	}
 		
-		//!dc.setColor(barColor,Gfx.COLOR_TRANSPARENT);
-        //!dc.drawText(3, 2, Gfx.FONT_XTINY, "Bat: "+batLevel.format("%1d") +"%", Gfx.TEXT_JUSTIFY_LEFT);
-        
-        var yStart = 3;
-        var xStart = 1;
+		/*
+		dc.setColor(barColor,Gfx.COLOR_TRANSPARENT);
+        dc.drawText(3, 2, Gfx.FONT_XTINY, "Bat: "+batLevel.format("%1d") +"%", Gfx.TEXT_JUSTIFY_LEFT);
+        */
+
 		dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
-        dc.drawRectangle(xStart, yStart, 29, 15);
-        dc.drawRectangle(xStart + 1, yStart + 1, 27, 13);
-        dc.fillRectangle(xStart + 29, yStart + 3, 2, 9);
+        dc.drawRectangle(3, 1, 29, 15);
+        dc.drawRectangle(4, 2, 27, 13);
+        dc.fillRectangle(32, 4, 2, 9);
         dc.setColor(barColor, Gfx.COLOR_TRANSPARENT);
         
-        for (var i = 0; i < (24 * System.getSystemStats().battery / 100); i = i + 3) {
-            dc.fillRectangle(xStart + 3 + i, yStart + 3, 2, 9);    
+        var maxIter = (24 * batLevel / 100);
+        for (var i = 0; i < maxIter; i = i + 3) {
+            dc.fillRectangle(6 + i, 4, 2, 9);    
         }
         
 		dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
