@@ -45,8 +45,9 @@ class OmniBikeFieldView extends Ui.DataField {
     hidden static const RHO = 1.226; //Air density (kg/m^3)
     hidden static const G = 9.8067; //Gravity Acceleration
     
-    hidden static const BUFFER_SIZE=5;
-    hidden static const QUEUE_SIZE=8;
+    hidden static const BUFFER_SIZE=6;
+    hidden static const BUFFER_SECOND_SAMPLE_INTERVAL=5;
+    hidden static const QUEUE_SIZE=5;
     hidden static const R = 6372800; // metres
     
     hidden var mSamples;
@@ -150,10 +151,8 @@ class OmniBikeFieldView extends Ui.DataField {
     //! The given info object contains all the current workout
     //! information. Calculate a value and save it locally in this method.
     function compute(info) {
-       	if (mTimerRunning) {
-             if (mSingleField) {
-        		computeVamSlope(info.altitude,info.elapsedDistance);
-        	}
+       	if (mTimerRunning && mSingleField) {
+        	computeVamSlope(info.altitude,info.elapsedDistance);
         }
    		//!System.println("[altitude:" + mAltitude + "][vam:" + mVamSpeed +"][slope:" + mSlope + "][timer:" + mTimerTime+"][spd:" + mSpd + "][HR:" + mHr + "][dst:" + mDst + "][cad:" + mCad + "][pwr:" + mPwr + "][gpsSignal:" + mGpsSignal + "]");
     }
@@ -167,9 +166,11 @@ class OmniBikeFieldView extends Ui.DataField {
         		mBuffer.reset();
         	}
         	return;
-        }
+        } 
         
-        if (mTick>=(BUFFER_SIZE-1)) {
+        mTick++;
+        
+        if (mTick>=(BUFFER_SIZE * BUFFER_SECOND_SAMPLE_INTERVAL) && (mTick % BUFFER_SECOND_SAMPLE_INTERVAL)==0) {
 	        var prevBufElement = mBuffer.pop();
 	        var prevAltitude = prevBufElement[0];
 	        var prevElapsedDistance = prevBufElement[1];
@@ -180,24 +181,25 @@ class OmniBikeFieldView extends Ui.DataField {
 	        if (prevAltitude != null && altitude != null) {
 		        dAltitude = altitude - prevAltitude;
 		    }
-		    var vam= (dAltitude*3600)/(BUFFER_SIZE-1);
+		    var vam= (dAltitude*3600)/(BUFFER_SIZE * BUFFER_SECOND_SAMPLE_INTERVAL);
 		    var slope = 0;
 		    
 	        if ( elapsedDistance != null && prevElapsedDistance != null && elapsedDistance>prevElapsedDistance) {
 	        	var dist = elapsedDistance - prevElapsedDistance;
 	        	if (prevAltitude != null && altitude != null) {
 		        	var dAltitude = altitude - prevAltitude;
-		        	System.println("dist:" + dist + ", dAltitude: " + dAltitude);
+		        	//System.println("dist:" + dist + ", dAltitude: " + dAltitude);
 		        	if ( dAltitude !=0) {
 		        		slope = Math.asin(dAltitude/dist)*100;
 		        	}
 		        }
 	        }
-	        System.println("vam: " + vam + ", slope: " + slope);
+	        //System.println("vam: " + vam + ", slope: " + slope);
 	        mSamples.add([slope,vam]);
 	    } else {
-	    	mTick++;
-	    	mBuffer.push([altitude,elapsedDistance]);
+	    	if ((mTick % BUFFER_SECOND_SAMPLE_INTERVAL)==0) {
+	    		mBuffer.push([altitude,elapsedDistance]);
+	    	}
         }
     }
         
@@ -248,17 +250,17 @@ class OmniBikeFieldView extends Ui.DataField {
 			
 			//!timer
 			if ((timerTime/3600)>0) {
-				dc.drawText(2, 36, Gfx.FONT_XTINY, (timerTime / 3600).format("%01d"), CENTER);
+				dc.drawText(7, 28, Gfx.FONT_XTINY, (timerTime / 3600).format("%01d"), CENTER);
 				formattedValue = Lang.format("$1$:$2$", [ ((timerTime % 3600) / 60).format("%02d"), (timerTime % 60).format("%02d")]);
 			} else {
 				formattedValue = Lang.format("$1$:$2$", [ (timerTime / 60).format("%02d"), (timerTime % 60).format("%02d")]);
 			}
-			dc.drawText(35, 60, VALUE_FONT, formattedValue, CENTER);
+			dc.drawText(35, 53, VALUE_FONT, formattedValue, CENTER);
 			
-	        dc.drawText(101, 60, VALUE_FONT, (hr==0 ? "--" :hr), CENTER);
+	        dc.drawText(101, 53, VALUE_FONT, (hr==0 ? "--" :hr), CENTER);
 	        
 	        //!dst
-	        dc.drawText(168, 60, VALUE_FONT, calculateDistance(dst), CENTER);
+	        dc.drawText(168, 53, VALUE_FONT, calculateDistance(dst), CENTER);
 	        
 	        //!Cadence
 	        dc.drawText(29, 125, VALUE_FONT, (cad>0 ? cad : "---"), CENTER);
@@ -304,17 +306,17 @@ class OmniBikeFieldView extends Ui.DataField {
     function drawGrid(dc,hr,vamSpeed,altitude) {
         dc.setColor(Gfx.COLOR_LT_GRAY,Gfx.COLOR_TRANSPARENT);
         dc.setPenWidth(1);
-		dc.drawLine(0, 22, dc.getWidth(), 22);
-		dc.drawLine(73, 22, 73, 80);
+		dc.drawLine(0, 18, dc.getWidth(), 18);
+		dc.drawLine(73, 19, 73, 73);
 		dc.drawLine(63, 89, 63, dc.getHeight());
-		dc.drawLine(131, 22, 131, 80);
+		dc.drawLine(131, 18, 131, 73);
 		dc.drawLine(141, 89, 141, dc.getHeight());
-		dc.drawLine(0, 80, dc.getWidth(), 80);
+		dc.drawLine(0, 73, dc.getWidth(), 73);
 		dc.drawLine(0, 89, dc.getWidth(), 89);
 		
 		dc.setColor(Gfx.COLOR_DK_GRAY,Gfx.COLOR_TRANSPARENT);
 		
-		dc.drawText(32, 30, HEADER_FONT, "TIME", CENTER);
+		dc.drawText(32, 25, HEADER_FONT, "TIME", CENTER);
 		
 		 //! HR zone
     	var color = Graphics.COLOR_LT_GRAY; //! No zone default light grey
@@ -332,12 +334,12 @@ class OmniBikeFieldView extends Ui.DataField {
 			}
     	}
 		dc.setColor(color, Gfx.COLOR_TRANSPARENT);
-		dc.fillRectangle(74, 23, 58, 16);
+		dc.fillRectangle(74, 19, 58, 16);
         dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);				
-        dc.drawText(101, 30, HEADER_FONT, "HR", CENTER);
+        dc.drawText(101, 25, HEADER_FONT, "HR", CENTER);
         
         dc.setColor(Gfx.COLOR_DK_GRAY,Gfx.COLOR_TRANSPARENT);
-        dc.drawText(168, 30, HEADER_FONT, "DST", CENTER);
+        dc.drawText(168, 25, HEADER_FONT, "DST", CENTER);
         
         dc.drawText(34, 97, HEADER_FONT, "CAD", CENTER);
         var header;
@@ -382,10 +384,7 @@ class OmniBikeFieldView extends Ui.DataField {
     function calculateSpeed(spd) {
 	    if (spd !=null && spd>0) {
 	        var speed = mIsSpeedUnitsMetric ? spd*3.6 : spd*2.23694;
-	        //var speed = mSpd*3.6;
 	    	return speed.format("%.02f");
-
-	    	//!return (spd*3.6).format("%.02f");
 	    } else {
 	    	return "---";
 	    }
@@ -425,7 +424,7 @@ class OmniBikeFieldView extends Ui.DataField {
         
         //time = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%.2d")]);
         dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
-        dc.drawText(x, 10, Gfx.FONT_XTINY, time, CENTER);
+        dc.drawText(x, 8, Gfx.FONT_XTINY, time, CENTER);
     }
     
     function drawSlope(dc,slope) {
@@ -455,9 +454,9 @@ class OmniBikeFieldView extends Ui.DataField {
             	dc.drawLine(x+ slopeSign, 87,x+ slopeSign,89);
             }
             
-            if (slope != null && i < slope*slopeSign) {
+            if (slope != null && (i+1) < slope*slopeSign) {
             	dc.setColor(fillColor,Gfx.COLOR_TRANSPARENT);
-            	dc.fillRectangle(x + (slopeSign > 0 ? 3: 1) , 82, 6, 6);
+            	dc.fillRectangle(x + (slopeSign > 0 ? 3: 1) , 75, 6,13);
             }    
         }
     }
@@ -474,7 +473,7 @@ class OmniBikeFieldView extends Ui.DataField {
             color = Gfx.COLOR_GREEN;
         }
         dc.setColor(color,Gfx.COLOR_TRANSPARENT);
-        dc.drawText(190, 10, Gfx.FONT_SYSTEM_XTINY, "GPS", CENTER);
+        dc.drawText(190, 8, Gfx.FONT_SYSTEM_XTINY, "GPS", CENTER);
     }
     
     function drawBattery(dc) {
@@ -504,7 +503,7 @@ class OmniBikeFieldView extends Ui.DataField {
         }
         
 		dc.setColor(mFgColor,Gfx.COLOR_TRANSPARENT);
-        dc.drawText(36, 3, Gfx.FONT_XTINY, batLevel.format("%1d") +"%", Gfx.TEXT_JUSTIFY_LEFT);
+        dc.drawText(36, 1, Gfx.FONT_XTINY, batLevel.format("%1d") +"%", Gfx.TEXT_JUSTIFY_LEFT);
     }
 } // end View
 
@@ -567,20 +566,21 @@ class DataBuffer {
     	var avg=0;
     	var numValidSamples=0;
     	//!System.println("average on buffer : " + toString());
-    	if (startPos!=endPos) {
-	    	if (startPos<endPos) {
-		    	for (var i=startPos; i<endPos;i++) {
-		    		avg+=(idx==null ? data[i] : data[i][idx]);
-		    		numValidSamples++;		
-		    	}
-		    } else {
-		    	for (var i=startPos; i<endPos+maxSize;i++) {
-		    		avg+=(idx==null ? data[i % maxSize] : data[i % maxSize][idx]) ;
-		    		numValidSamples++;		
-		    	}
-		    }
-	    	avg= avg /numValidSamples;
-    	}
+    	if (startPos<endPos) {
+	    	for (var i=startPos; i<endPos;i++) {
+	    		avg+=(idx==null ? data[i] : data[i][idx]);
+	    		numValidSamples++;		
+	    	}
+	    } else {
+	    	for (var i=startPos; i<endPos+maxSize;i++) {
+	    		var ii= i % maxSize;
+	    		if (data[ii]!=null) {
+	    			avg+=(idx==null ? data[ii] : data[ii][idx]) ;
+	    			numValidSamples++;
+	    		}		
+	    	}
+	    }
+    	avg= numValidSamples > 0 ? avg /numValidSamples: 0.0;
     	//!System.println("buffer average : " + avg);
     	return avg;
     }
